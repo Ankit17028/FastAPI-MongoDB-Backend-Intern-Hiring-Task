@@ -18,6 +18,10 @@ from urllib.parse import quote_plus
 MONGODB_USERNAME = quote_plus(os.environ['MONGODB_USERNAME'])
 MONGODB_PASSWORD = quote_plus(os.environ['MONGODB_PASSWORD'])
 
+
+print(os.environ.get('MONGODB_USERNAME'))
+print(os.environ.get('MONGODB_PASSWORD'))
+
 MONGODB_URI = f"mongodb+srv://{MONGODB_USERNAME}:{MONGODB_PASSWORD}@cluster0.dn3cas5.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 
 
